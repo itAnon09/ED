@@ -12,16 +12,16 @@ public class Main {
         StackNode novoNo2 = new StackNode(2);
         StackNode novoNo3 = new StackNode("Hello World");
         // NOVOS NóS A SEREM INSERIDOS.
-        minhaPilha.addNode(novoNo1);
-        minhaPilha.addNode(novoNo2);
-        minhaPilha.addNode(novoNo3);
+        minhaPilha.push(novoNo1);
+        minhaPilha.push(novoNo2);
+        minhaPilha.push(novoNo3);
 
         System.out.println("tamanho antigo " + minhaPilha.getSize());
 
-        StackNode ultimo = minhaPilha.popNode();
+        StackNode ultimo = minhaPilha.pop();
 
-        StackNode ultimo2 = minhaPilha.popNode();
-        StackNode ultimo3 = minhaPilha.popNode();
+        StackNode ultimo2 = minhaPilha.pop();
+        StackNode ultimo3 = minhaPilha.pop();
         System.out.println("last removed = " + ultimo.getObject());
 
         System.out.println("novo tamanho " + minhaPilha.getSize());
